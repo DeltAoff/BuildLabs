@@ -1,0 +1,1013 @@
+/* Initialistion / Clear */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, 
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+  	margin: 0;
+ 	padding: 0;
+  	border: 0;
+	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+}
+
+
+
+
+/* Police Bold */
+
+@font-face {
+  font-family: 'Roboto Slab Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u92w7CGwR0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body 
+{
+	background-color: #f7faff;
+    line-height: 1; 
+}
+
+/* Gen */
+
+h1,h2,h3,h4,h5
+{
+	color: #3d4449;
+	font-family: 'Roboto Slab Bold',serif;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+
+body, textarea, imput, select
+{
+	color: #7f888f;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1.65;
+} 
+
+strong, b 
+{
+    color: #3d4449;
+    font-weight: 600;
+}
+
+em, i 
+{
+	font-style: italic;
+}
+
+mark 
+{
+	background-color: transparent;
+	color: inherit;
+}
+
+
+ol, ul 
+{
+	list-style: none;
+}
+
+a 
+{
+    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	color: #0F23AA;
+	text-decoration: none;
+}
+
+a:-webkit-any-link
+{
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+a:hover 
+{
+	color: #4f8cef !important;
+}
+
+a:hover strong 
+{
+	color: #4f8cef !important;
+}
+
+p
+{
+	font-size: 13pt;
+}
+
+blockquote /* FeedBack Init */
+{
+	border-left: solid 3px rgba(210, 215, 217, 0.75);
+    font-style: italic;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+
+
+
+/* Main */
+
+#main
+{
+	margin-left: 5%;
+	margin-right : 5%;
+}
+
+#container
+{
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(5,3fr);
+	grid-template-rows: 1fr 1.4fr 1.2fr 0.2fr;
+}
+
+/* Header */
+
+#logo
+{
+	border-bottom: 0;
+	color: inherit;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.30em;
+	grid-column :1/6;
+	grid-row-end :1;
+	padding: 5em 0em 0em 0em;
+}
+
+#logo strong
+{
+	transition: color 0.17s ease-in-out;
+}
+
+#label /* Version */
+{
+	font-size: 0.8em;
+	font-style: oblique;
+}
+
+
+#fortheborder /* Bordure */
+{
+	border-bottom: solid 5px #4f8cef;
+	padding-top: 1em;
+
+}
+
+/* 1st Section */
+
+#item2
+{
+	grid-column:1/6;
+  	display: flex;
+  	flex-direction: row;
+ 	justify-content: space-between;
+ 	border-bottom: #DDE1E3 solid 2px;
+ 	margin :4em 0 0 0;
+ 	padding-bottom: 6em;
+ 	align-items: center;
+ 	max-width: 100%;
+}
+ 
+ /*Child1*/
+
+#child1 /* Header txt */
+{
+	order: 1;
+	flex:1;
+	height: 80%;
+	width:80%;
+	margin-right: 1.2em;
+	padding-right: 4em;
+}
+
+/*GrandTitre*/
+
+#bg
+{
+	font-size: 2em;
+	margin-bottom: 0.95em;
+
+}
+
+/*Desciption*/
+
+#descript
+{
+	font-size: 13pt;
+
+}
+
+#upper /* Sous-titre en maj */
+{
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	margin-bottom: 2.2em;
+}
+
+#button 
+{
+	margin-top: 1.7em;
+}
+
+/*Child2*/ /* Image*/
+
+#child2 
+{
+	order:2;
+	flex: 1;
+	width: 97%;
+	margin-left: 2em;
+}
+
+.img
+{
+	width: inherit;
+    height: auto;
+    width: auto\9;
+    border-radius: 7px;
+    
+}
+
+#divimg
+{
+	width: inherit;
+}
+
+
+/* Middle Menu Section */
+
+/* 1st Row */
+
+#midl /* FlexBox */
+{
+	margin-top: 6em;
+	margin-bottom: 2em;
+	grid-column: 1/6;
+	grid-row-start: 2;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/* 2nd Row */
+
+#mid2 /* FlexBox */
+{
+	margin-top: 3em;
+	margin-bottom: 2em;
+	grid-column: 1/6;
+	grid-row-start: 3;
+	display: flex;
+}
+
+
+/* Entire Nav Value */
+
+.imgp /* Image */
+{
+	max-width: 100%;
+    height: auto;
+    width: inherit;
+    border-radius: 7px;
+    transform: scale(1.0);
+    transition: 10s cubic-bezier(0, 0.59, 0.71, 0.92);
+}
+
+.imgp:hover
+{
+	transform: scale(1.15);
+	border-radius: 7px;
+
+}
+
+#secimg1 , #secimg2 , #secimg3 , #secimg4
+{
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 7px;
+	line-height: 0;
+}
+
+
+#composants /* H1 */
+{
+	display: inline-block;
+	margin-top: 1.5em;
+	width: 85%;
+}
+
+.text /* Txt */
+{
+	max-width: 100%;
+    height: auto;
+	margin-top: 1.5em;
+}
+
+#button1 /* Button */
+{
+	margin-top: 1.7em;
+}
+
+/*Footer*/
+
+#foot /* Entire Footer */
+{
+	grid-row: 4;
+	grid-column: 1/6;
+}
+
+#patch /* Text */
+{
+	grid-column: 1/6;
+	font-size: 2.2vh;
+}
+
+
+
+/* Fonctions */
+
+.button {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: 0;
+    box-shadow: inset 0 0 0 2px #4f8cef;
+    color: #4f8cef !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.7em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+.button:hover 
+{
+			background-color: #d9e6fc;
+}
+
+
+.button:active 
+{
+			background-color: #d9e6fc;
+}
+
+.button.icon:before 
+{
+			margin-right: 0.5em;
+}
+
+
+.button:disabled 
+{
+			pointer-events: none;
+			opacity: 0.25;
+}
+
+/* Media Queries              --- ------- ----- - - - -- - - - - ----- -- - - - */ 
+
+@media screen and (max-width: 1680px)
+{
+	/*Head*/
+	body, input, select, textarea 
+	{
+				font-size: 11pt;
+	}
+
+	h1 
+	{
+			font-size: 1.7em;
+	}
+
+	/*Menu*/
+}
+
+@media screen and (max-width: 1280px)
+{
+	/* Flex Box Menu */
+#midl
+{
+	margin-top: 6em;
+	grid-column: 1/6;
+	grid-row-start: 2;
+	display: flex;
+	justify-content: center;
+}
+
+#mid2
+{
+	grid-column: 1/6;
+	grid-row-start: 3;
+	display: flex;
+	justify-content: space-between;
+}
+
+#sec1
+{
+	display: flex;
+	flex-direction: column;
+	grid-row-end: 2;
+}
+
+#sec2
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.imgp
+{
+	max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border-radius: 7px;
+}
+
+
+
+
+}
+
+@media all and (max-device-width: 1710px), (max-width: 1710px)
+{
+
+#sec1,#sec3
+{
+	margin-right: 1em;
+}
+
+#sec2,#sec4
+{
+	margin-left: 1em;
+}
+
+
+}
+@media all and (max-device-width: 1010px) and (min-device-width: 480px), (max-width: 1010px) and (min-width: 480px) 
+{
+
+#container
+{
+	grid-template-rows: 0.5fr 1.0fr 1.2fr 0.2fr;
+}
+
+
+#bg
+{
+	font-size: 2vw;
+}
+
+
+#prl
+{
+	font-size: 1.5vw;
+}
+
+#descript p
+{ 
+	font-size: 1.5vw;
+}
+
+#child1
+{
+	flex:1;
+}
+#button
+{
+	margin: 0;
+}
+.button
+{
+	font-size: 8pt;
+	margin-top:1em;
+	height: 3.7em;
+}
+
+
+#child1
+{
+	flex:0.9;
+	height: 80%;
+}
+
+
+}
+
+@media all and (max-device-width: 1180px) and (min-device-width: 940px), (max-width: 1180px) and (min-width: 940px)
+{
+
+#container
+{
+	grid-template-rows: 1fr 1.2fr 1.2fr 0.2fr;
+}
+
+#bg
+{
+	font-size: 2vw;
+}
+
+
+#prl
+{
+	font-size: 1.3vw;
+}
+
+#descript p
+{ 
+	font-size: 1.3vw;
+}
+
+#child1
+{
+	flex:0.7;
+	padding-bottom: 1em;
+}
+
+#button
+{
+	margin: 0;
+}
+
+.button
+{
+	font-size: 8pt;
+	margin-top:2em;
+	height: 3.7em;
+}
+
+}
+
+
+@media all and (max-device-width: 480px), (max-width: 480px)
+{
+
+#container
+{
+   display : flex;
+   flex-direction : column;
+}
+
+#logo
+{
+   font-size:1em;
+}
+
+body
+{
+   margin : auto;
+}
+
+
+#item2
+{
+   flex-direction : column;
+}
+
+.img
+{
+   width : 100%;
+   height : 100%;
+}
+
+#divimg
+{
+   padding : 0;
+   margin-left : 1em;
+   width : 100%;
+   
+}
+
+#child2
+{
+   order : 1;
+   margin-left : -2em;
+}
+
+#child1
+{
+   order : 2;
+}
+
+#bg
+{
+   font-size : 0.87em;
+}
+
+p
+{
+   font-size : 0.77em;
+}
+
+/* Middle */
+
+#sec1
+{
+	margin-right:0;
+}	
+
+#sec2
+{
+	margin-left:0;
+}
+
+#sec3
+{
+	margin-right:0;
+}	
+
+#sec4
+{
+	margin-left:0;
+}
+
+
+#midl
+{
+   display : flex;
+   flex-direction : column;
+}
+
+#mid2
+{
+   display : flex;
+   flex-direction : column;
+
+}
+
+
+#midl
+{
+	margin: 0;
+}
+
+#sec1 , #sec2 , #sec3 , #sec4
+{
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+	border-bottom: 2px solid #DDE1E3;
+}
+
+.imgp
+{
+   margin : 0;
+   padding : 0;
+   width : auto;
+   height : auto;
+   transition: .3s ease-in-out;
+   transform: scale(1.3);
+}
+
+}
+
+
+
+
+
+
+
+/*   
+*
+* COMP.HTML 
+*
+*/
+
+/* Main */
+
+#wrapper
+{
+	grid-column: 1/6;
+}
+
+
+#sect /* Section Divers == All w/! Header Build */
+{
+	grid-column :1/6;
+}
+
+/* Header Section */
+
+#sect1 /* Entire Section */
+{
+	margin-top: 6em;
+	grid-column: 1/6;
+}
+
+
+#titleone /* Title */
+{
+	font-size: 2em;
+	grid-column-end:4;
+}
+
+#img7 /* Image 	Div */
+{
+	margin-top: 2em;
+}
+
+.img7 /* Image Class */
+{
+	border-radius: 7px;
+	width: 100%;
+	height :100%;
+}
+
+#p1sec1
+{
+	font-size: 1.17em;
+	grid-row :2/4;
+	margin-top: 2em;
+	text-align: justify-all;
+	margin: 2em 1em 0 1em;
+}
+
+/* Specs */
+
+#sect2 /* Text Spec */
+{
+	grid-row:2/4;
+	grid-column: 1/6;
+}
+
+
+#p1sec2 /* Txt Specs */
+{
+	margin: 2em 1em 0 1em;
+	grid-column: 1/6;
+	border-bottom : 2px solid #DDE1E3;
+	padding-bottom: 3em;
+	
+}
+
+
+/* Content Description Section */
+
+#sec
+{
+	grid-column: 1/6;
+	grid-row:3/4;
+	padding-bottom: 2em;
+	border-bottom: 2px solid #DDE1E3;
+}
+
+#h1sec3 /* Big title */
+{
+	text-align: center;
+	font-size: 1.75em;
+	margin: 1em 1em 0em 1em;
+	border-bottom: 2px solid #DDE1E3;
+	padding-bottom: 1em;
+}
+
+#h2sec3 /* Under Title */
+{
+	font-size: 1.5em;
+	margin :2em 0 2em 0;
+}
+
+#ls1
+{
+	list-style : square;
+	grid-column-start: 1;
+	font-size: 13pt;
+}
+
+#ulcorps, .ulhead
+{
+	font-weight: bold;
+}
+
+/* Footer */
+
+#h2foot
+{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1em 1em 0em 1em;
+	border-bottom: 2px solid #DDE1E3;
+	padding-bottom: 1em;
+}
+
+
+
+/*/*//*/*//*/*//*/*//*/* Config.HTML *//*/*//*/*//*/*//*/*/
+
+/* Sommaire */ 
+
+#sum /* Sommaire Div */
+{
+	margin-top: 2em;
+}
+
+#suma /* Sommaire Ul */
+{
+	width: 100%;
+}
+
+#sumhead /* Sum Mid Div */
+{
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+.sumli /* Unitées Sommaire */
+{
+	margin-bottom: 2em;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: 0;
+    border: 2px #4f8cef solid;
+    color: #0F23AA !important;
+    cursor: pointer;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sumli:hover /* Dessus Fonction */
+{
+			background-color: #d9e6fc;
+}
+
+#headconf
+{
+	border-bottom: 2px solid #DDE1E3;
+}
+
+/* Ancre */
+
+#ancre
+{
+    position: relative;
+    bottom:50px;
+    right:50px;
+}
+
+/* Section */ 
+
+/* Main */
+
+#confpanel
+{
+	padding-top: 2em;
+	padding-bottom: 3em;
+	border-bottom: 2px solid #DDE1E3;
+}
+
+/* Sec Ind */
+
+.h3c /* Titre Composants */
+{
+	font-family: 'Roboto Slab';
+ 	font-size: 1.2em;
+ 	font-weight:500;
+ 	letter-spacing: 0.05em;
+ 	margin-top: 2em;
+}
+
+/* Flex */
+
+#mthwrapper /* Flex Main */
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* Section Left */
+
+#mthimg1 /* Image */
+{
+	margin-top: 2em;
+	border: 1px #DDE1E3 solid;
+	border-radius: 8px;
+	background-color: #ffffff;
+}
+
+#h4img1mth /* Price Title */
+{
+	text-align: center;
+	border-bottom:  solid 1px #DDE1E3;
+}
+
+#ptxt /* Price Tag */
+{
+	text-align: center;
+	margin-top: 0.07em;
+	color: #92888F;
+	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+#ptxt:hover 
+{
+	color: #4f8cef !important;
+}
+
+#txtimg1mth /* Image Product */
+{
+	color: #DDE1E3;
+}
+
+/* Section Right */
+
+#mthtext1 /* Texte */
+{
+	width: 50%;
+	margin-left: 5em;
+}
+
+.it /* italic txt descipt */
+{
+	font-style: italic;
+}
+
+/* Ancre */
+
+#btntop
+{
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border: 1px solid #DDE1E3;
+	background-color: #f9fbff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	width: 20%;
+	border-radius: 10px;
+	text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.9em;
+    height: 3.2em;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    cursor: pointer;
+
+	
+}
+
+#btntop:hover 
+{
+			background-color: #d9e6fc;
+}
+
+
+#btntop:visited
+{
+			color: #4F8CEF;
+}
+
+/*/*//*/*//*/*//*/*//*/* About.html *//*/*//*/*//*/*//*/*/
+
+
+#abh1 /* Head Title */
+{
+	margin-bottom: 3em;
+}
+
+#avis1 /* FeedBack */
+{
+	margin-top: 6em;
+}
+
+
+#itab /* Italic Author W+I*/
+{
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	text-align: right;
+}
+
